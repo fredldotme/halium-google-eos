@@ -230,3 +230,4 @@ ro.lmk.kill_timeout_ms=100
 # RECOVERY UI BUILD PROPERTIES
 #
 ro.sf.lcd_density=320
+ro.boot.dynamic_partitions=true
