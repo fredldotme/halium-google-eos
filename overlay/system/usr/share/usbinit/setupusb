@@ -1,8 +1,8 @@
 CONFIG_DIR=/dev/config
 GADGET_DIR=$CONFIG_DIR/usb_gadget
 SERIALNUMBER=`getprop ro.serialno`
-MANUFACTURER=`getprop ro.product.manufacturer`
-PRODUCT=`getprop ro.product.model`
+MANUFACTURER=`getprop ro.product.vendor.manufacturer`
+PRODUCT=`getprop ro.product.vendor.model`
 PRODUCT_ID_SUFFIX=`getprop ro.usb.pid_suffix`
 CONTROLLER=`getprop sys.usb.controller`
 
