@@ -1,15 +1,3 @@
-# Misuse this overlay for some Android properties
-on early-init
-    setprop debug.stagefright.ccodec 0
-
-on init
-    setprop debug.stagefright.ccodec 0
-
-on boot
-    setprop debug.stagefright.ccodec 0
-    setprop ro.config.vc_call_vol_steps 18
-    setprop ubuntu.unity8.interactive_blur true
-
 service time_daemon vendor.time_daemon_HYBRIS_DISABLED
     disabled
     oneshot
