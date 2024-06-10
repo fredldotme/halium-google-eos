@@ -16,6 +16,3 @@ fi
 # explicitly tell it to stop.
 setprop ctl.stop time_daemon
 
-# Set schedtune boost
-echo 20 > /sys/fs/cgroup/schedtune/schedtune.boost
-echo 1 > /sys/fs/cgroup/schedtune/schedtune.prefer_idle
