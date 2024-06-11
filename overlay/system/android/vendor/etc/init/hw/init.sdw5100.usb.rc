@@ -1,0 +1,3 @@
+# Empty on purpose, so that the host can configure
+# the shared configfs area in /sys.
+
