@@ -2,7 +2,7 @@ eos:
   Names:
     - eos
   PrettyName: Pixel Watch 2
-  DeviceType: phone
+  DeviceType: watch
   GridUnit: 8
   SupportedOrientations:
     - Portrait
