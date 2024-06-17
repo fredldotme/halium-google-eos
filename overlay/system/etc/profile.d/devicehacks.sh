@@ -1,3 +1,3 @@
 #!/bin/sh
 
-export QMLSCENE_DEVICE=haliumqsgcontext
+# export QMLSCENE_DEVICE=haliumqsgcontext
