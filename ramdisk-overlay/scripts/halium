@@ -509,6 +509,18 @@ mountroot() {
 		done
 	fi
 
+	# Halium 13 might take bootconfig as the file providing boot info
+	if [ -f /proc/bootconfig ]; then
+		while read x; do
+			x=$(echo $x | sed "s/ //g" | sed "s/\"//g")
+			case ${x} in
+			androidboot.slot_suffix=*)
+				ab_slot_suffix=${x#*=}
+			;;
+			esac
+		done < /proc/bootconfig
+	fi
+
 	# override with a possible cmdline parameter
 	if grep -q datapart= /proc/cmdline; then
 		for x in $(cat /proc/cmdline); do
